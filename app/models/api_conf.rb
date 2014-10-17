@@ -1,0 +1,2 @@
+class ApiConf < Configuration
+end
