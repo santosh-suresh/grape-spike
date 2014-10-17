@@ -1,28 +1,27 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is the version that I worked on to get an understanding of grape based API building in rails. This makes use of the following gems
+<tt>grape</tt>
+<tt>grape-swagger</tt>
+<tt>grape-swagger-rails</tt>
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Ensure that you are using Ruby version <pre>2.1.0+</pre> and are on rails <pre>4.1</pre>
+
+The application exposes the following api's
+
+Companies:
+ GET: http://localhost:3000/api/v1/companies (lists all companies)
+ POST: http://localhost:3000/api/v1/companies (create a new company)
+
+ApiConf
+  GET: http://localhost:3000/api/v1/config (lists all apiconf)
+  GET: http://localhost:3000/api/v1/config/:key (lists apiconf with the given key)
+  POST: http://localhost:3000/api/v1/config (create a new config)
+
+I have also included swagger documentation and can be accessed from
+http://localhost:3000/apidoc
+
+This gives a nice documentaion and the ability to execute the API calls.
+
+
